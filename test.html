@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title>JavaScript</title>
+ <script src="formularz.js"></script>
+ <link rel="stylesheet"
+href="style.css"
+type="text/css" />
+</head>
+<body>
+ <div id="bledy"></div>
+ <form name="dane_osobowe">
+ <table>
+ <tr><td>Imię</td><td><input type="text" name="f_imie" id="f_imie" onblur="return checkName(this.id);"><span id="s_imie"></span></td></tr>
+ <tr><td>Nazwisko</td><td><input type="text" name="f_nazwisko" id="f_nazwisko" onblur="return checkName(this.id)"><span id="s_nazwisko"></span></td></tr>
+ <tr><td>E-mail</td><td><input type="text" name="f_email" id="f_email" onblur="return checkMail(this.id)" ><span id="s_mail"></span></td></tr>
+ <tr><td>Hasło</td><td><input type="text" name="f_haslo" id="f_haslo" onblur="return checkPassword(this.id)" ><span ></span></td></tr>
+ <tr><td>Hasło powtórzone</td><td><input type="text" name="f_haslo_p" id="f_haslo_p"  onblur="return checkPassword(this.id)"><span></span></td></tr>
+ <tr><td>Data</td><td><input type="text" name="f_data" id="f_data" onblur="return checkData(this.id)" ><span id="s_data"></span></td></tr>
+ <tr><td>Opis</td><td><textarea rows="5" cols="15" name="f_opis" id="f_opis" onblur="return checkOpis(this.id);"></textarea>
+ </td></tr>
+ <tr><td colspan="2"><input type="submit" value="Zarejestruj się" onclick="return validate(this.form);" ></td></tr>
+ </table>
+ </form>
+</body>
+</html
